@@ -7,6 +7,28 @@ public class Main {
 
     public static void main(String[] args) {
 
+        CustomLinkedList linkedList = new CustomLinkedList();
+
+        linkedList.pop();
+
+        linkedList.append("Gabriel");
+        linkedList.append("Renato");
+        linkedList.append("Alline");
+        linkedList.append("Yuri");
+        linkedList.preprend("Marcia");
+
+        // linkedList.insert(2, "Marcos");
+        System.out.println(linkedList);
+
+        linkedList.remove(2);
+
+       
+
+        System.out.println(linkedList);
+
+    }
+
+    public static void testHashTable() {
         CustomHashTable table = new CustomHashTable();
 
         table.set("nome", "Gabriel");
@@ -45,7 +67,6 @@ public class Main {
 
             System.out.println(current);
         }
-
     }
 
     public static void testArray() {
